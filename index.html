@@ -6,9 +6,19 @@
     <title>Document</title>
   </head>
   <body>
+    <div id="show"></div>
     <script>
-      let text = '내 이름은 \n\\"홍길동\\"입니다. ◩◩☔';
-      console.log(text);
+      let name = "홍길동";
+      let age = 30;
+
+      let text =
+        "<table border=1>" +
+        "<tr><th>이름</th>" +
+        "<th>이름</th></tr>" +
+        `<tr><td>${name}</td>` +
+        `<td>${age}</td></tr>`;
+
+      document.getElementById("show").innerHTML = text;
     </script>
   </body>
 </html>
